@@ -54,6 +54,9 @@ parts:
     source-tag: '0.1.0'
     source-depth: 1
     plugin: make
+    override-pull: |
+      craftctl default
+      craftctl set version=$(git describe --tags --abbrev=10)
 
   app-3:
     source: https://github.com/motjuste/snapping-workshop-3
