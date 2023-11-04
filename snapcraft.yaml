@@ -55,6 +55,7 @@ parts:
   app-3:
     source: https://github.com/motjuste/snapping-workshop-3
     source-type: git
+    source-branch: main
     source-depth: 1
     plugin: dump
     organize:
